@@ -1,13 +1,13 @@
 ---
 path: "/posts/2015/10/build-a-calculator-with-ionic-part-2/"
 date: "2015-10-11T20:16:50Z"
-title: "Build a Calculator with Ionic - Part 2 of 3"
+title: "Build a Calculator with Ionic - Part 2 of 2"
 categories: ["Tutorials"]
 tags: ["Cordova", "Ionic", "Mobile"]
 excerpt: "In the previous post, we made a pretty calculator that doesn't really do anything.  In this post, w..."
 ---
 
-In the [previous post](http://aptobits.com/2015/10/build-a-calculator-with-ionic/), we made a pretty calculator that doesn't really do anything.  In this post, we'll be focused on making the calculator actually work.  
+In the [previous post](/build-a-calculator-with-ionic-1), we made a pretty calculator that doesn't really do anything.  In this post, we'll be focused on making the calculator actually work.  
 
 # Adding Behavior
 
@@ -171,7 +171,7 @@ angular.module('starter')
 It's starting to actually look like a calculator!  It can even accurately calculate the result of an infinite number of equations (<small>as long as they equal 100</small>).
 
 Check it out:
-[![its_doing_stuff](11-1.gif)](11-1.gif)
+![its doing stuff](11-1.gif)
 
 This is another great place to throw down a git commit.
 
@@ -274,7 +274,7 @@ Cordova Plugins can be used to give you access to native functionality that you 
 So, let's make the device vibrate when the user hits equals.  More gold plating, but with a purpose! :)
 
 A [quick search on the Cordova Plugin Registry](https://cordova.apache.org/plugins/?q=vibration) shows one promising looking plugin:  
-[![plugin_search_vibrate](11-2.png)](11-2.png)
+![plugin_search_vibrate](11-2.png)
 I highlighted a couple things you'll want to keep an eye on when searching for plugins.  
 
 * Does the plugin support all of the devices you're targeting? This one supports quite a few.
@@ -313,11 +313,9 @@ ionic run ios --device
 
 And that's it!
 
-In the next post, we'll look at adding a local database that captures a log of all the equations we've entered.
-
 Other posts in this series:
 
-* [Getting Started with Cordova](http://aptobits.com/2015/10/getting-started-with-cordova/)
-* [Intro to Ionic](http://aptobits.com/2015/10/intro-to-ionic/)
-* [Build a Calculator with Ionic - Part 1 of 3](http://aptobits.com/2015/10/build-a-calculator-with-ionic/)
-* Build a Calculator with Ionic - Part 2 of 3
+* [Getting Started with Cordova](/getting-started-with-cordova)
+* [Intro to Ionic](/intro-to-ionic)
+* [Build a Calculator with Ionic - Part 1 of 2](/build-a-calculator-with-ionic-1)
+* Build a Calculator with Ionic - Part 2 of 2

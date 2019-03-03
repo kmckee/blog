@@ -13,7 +13,9 @@ I'm a huge fan of Firebug.  I tend to write most of my UI-centric Javascript ri
 
 If you use the Firebug console a lot, like me, you've probably run into issues when you're interacting with pages that use IFrames.  The console attaches to the top window, so any code you run via the command line is run only in that context.  You could manually drill down through any frames on the page like this:
 
-<pre lang="javascript">var someElement = document.getElementById('someFrame').document.getElementById('someElement');</pre>
+```js
+var someElement = document.getElementById('someFrame').document.getElementById('someElement');
+```
 
 That's pretty ugly, and if you're planning to actually use the code you're writing in the console you'll need to run through it all and remove all the code that drills down through the frames.  I'll pass.
 
@@ -21,10 +23,12 @@ That's pretty ugly, and if you're planning to actually use the code you're writi
 
 Firebug has a built in command that can attach the console to a different window:
 
-<pre lang="javascript">cd(document.getElementById("someFrame").contentWindow);
+```js
+cd(document.getElementById("someFrame").contentWindow);
 // Now, all script will be run in the context of that frame.
 var someElement = document.getElementById('someElement');
-cd(top);  // Attach the console back to the top window.</pre>
+cd(top);  // Attach the console back to the top window.
+```
 
 That's a lot better than manually drilling down through any frames, plus my code isn't going to be littered with useless frame references this way. Of course there are still a couple other problems:
 
@@ -36,7 +40,7 @@ That's a lot better than manually drilling down through any frames, plus my code
 
 The solution I came up with was to extend Firebug by adding a button that would allow the user to visually select a frame on the page to attach the console to.  Here's what it looks like in action:
 
-[![Screenshot](http://test.aptobits.com/wp-content/uploads/2012/08/FireFrame.png "FireFrame In Action")](http://test.aptobits.com/wp-content/uploads/2012/08/FireFrame.png)
+![Screenshot](FireFrame.png)
 
 If you'd like to try it out can [download it directly](https://addons.mozilla.org/en-US/firefox/addon/fireiframe/ "FireIFrame Download Page") or just search for it in the extension manager.  Source code is available on [GitHub](https://github.com/kmckee/FireIFrame "FireIFrame GitHub page").
 

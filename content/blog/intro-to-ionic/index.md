@@ -7,7 +7,7 @@ tags: ["Cordova", "Ionic", "Mobile"]
 excerpt: "Now that you've mastered all things Cordova in the previous blog post, let's take a look at Ionic a..."
 ---
 
-Now that you've mastered all things Cordova in the [previous blog post](http://aptobits.com/2015/10/getting-started-with-cordova/), let's take a look at Ionic and see where that fits in.  
+Now that you've mastered all things Cordova in the [previous blog post](/getting-started-with-cordova), let's take a look at Ionic and see where that fits in.  
 
 ## What is Ionic?
 
@@ -17,21 +17,23 @@ Ionic sits on top of Cordova and provides some excellent CSS and JavaScript comp
 
 Assuming you've set up Cordova already, the only thing you need to do is globally install the ionic node module:
 
-<pre lang="bash">npm install -g cordova ionic
-</pre>
+```shell
+npm install -g cordova ionic
+```
 
 ## Create an Ionic App
 
 To create a new Ionic app, you'll want to cd into whatever directory you keep your projects and run this ionic start command, passing in the directory name you would like to create the project in and which starter template you would like to use.
 
-<pre lang="bash">cd ~/code/
+```shell
+cd ~/code/
 ionic start hello_ionic tabs
-</pre>
+```
 
 In this example, we created an ionic app inside the ~/code/hello_ionic that starts with a simple tab based layout.  The basic structure of this application is very similar to what we're already familiar with from a basic Cordova app, except now there's a bunch of extra Ionic goodies in there.  One other thing worth noting is that Ionic will automatically add the iOS platform for you if you're on a mac, whereas with Cordova you don't have any platforms by default.
 
 Let's take a look at what this created for us.
-[![vanilla_ionic_tree](04-1-1.png)](04-1-1.png)
+![vanilla_ionic_tree](04-1-1.png)
 
 #### config.xml
 
@@ -79,19 +81,21 @@ It's probably a good idea to break apart the 'controllers.js' and 'services.js' 
 
 It's a good idea to get a commit in at this point, just in case things get squirrelly.  
 
-<pre lang="bash">git init
+```shell
+git init
 git commit -am "First commit, vanilla ionic app"
-</pre>
+```
 
 ## Deploying to the iOS simulator
 
 Lets go ahead and run our app on an iOS simulator (assuming you're on a mac).  Open up a terminal in the root of your project and run the following command:
 
-<pre lang="bash">ionic emulate ios
-</pre>
+```shell
+ionic emulate ios
+```
 
 If you're following along at home and everything went well, you should see the iOS simulator spin up at this point and load an app that looks like this:
-[![vanilla_ionic_app](04-1-2.png)](04-1-2.png)
+![vanilla_ionic_app](04-1-2.png)
 
 ## Conclusion
 
@@ -99,7 +103,7 @@ As you can see, Ionic added quite a bit of stuff over a vanilla Cordova app.  Ho
 
 Other posts in this series:
 
-* [Getting Started with Cordova](http://aptobits.com/2015/10/getting-started-with-cordova/)
-* [Intro to Ionic](http://aptobits.com/2015/10/intro-to-ionic/)
-* [Build a Calculator with Ionic - Part 1 of 2](http://aptobits.com/2015/10/build-a-calculator-with-ionic/)
-* Build a Calculator with Ionic - Part 2 of 2 (Coming soon)
+* [Getting Started with Cordova](/getting-started-with-cordova)
+* [Intro to Ionic](/intro-to-ionic)
+* [Build a Calculator with Ionic - Part 1 of 2](/build-a-calculator-with-ionic-1)
+* [Build a Calculator with Ionic - Part 2 of 2](/build-a-calculator-with-ionic-2)

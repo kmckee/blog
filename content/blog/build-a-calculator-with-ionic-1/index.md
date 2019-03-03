@@ -1,7 +1,7 @@
 ---
 path: "/posts/2015/10/build-a-calculator-with-ionic/"
 date: "2015-10-10T20:23:37Z"
-title: "Build a Calculator with Ionic - Part 1 of 3"
+title: "Build a Calculator with Ionic - Part 1 of 2"
 categories: ["Tutorials"]
 tags: ["Cordova", "Ionic", "Mobile"]
 excerpt: "In this tutorial, we're going to build a basic calculator app using Ionic.  The calculator app is r..."
@@ -44,7 +44,7 @@ ionic run ios
 
 At this point, you should see a blank app load up on the simulator.  
 
-[![ionic_blank_starter](10-1.png)](http://aptobits.com/wp-content/uploads/2015/10/ionic_blank_starter.png)
+![ionic_blank_starter](10-1.png)
 
 The simulator is great, but it takes a little longer than I'd really like when I'm making minor adjustments to the layout.  Luckily, there's a much faster way to get feedback.  Open up a new terminal and run this in the root of your project:
 
@@ -57,7 +57,7 @@ This will spin up a local web server that serves your app.  It will even automat
 
 I recommend opening your dev tools on the right side, this gives you a phone shaped viewport for your app and plenty of space for your dev tools.
 
-[![ionic_blank_starter_in_browser](10-2.png)](http://aptobits.com/wp-content/uploads/2015/10/ionic_blank_starter_in_browser.png)
+![ionic_blank_starter_in_browser](10-2.png)
 
 Open up www/index.html and change the H1 element's text from "Ionic Blank Starter" to "Calculator".  You should see the page immediately refresh in your browser and reflect the changes.  
 
@@ -81,7 +81,7 @@ So, this markup:
 ```
 
 Will look like this on a device:
-[![Grid_Evenly_Spaced_Columns](10-3.png)](10-3.png)
+![Grid_Evenly_Spaced_Columns](10-3.png)
 
 You can also use the grid system to do row and column spanning, explicit percentage sizing of columns, and a bunch of other things.  For what we're doing, just knowing the above is enough.  If your interested in learning the other things you can do, check out the [Ionic Documentation for Grids](http://ionicframework.com/docs/components/#grid-explicit).
 
@@ -127,7 +127,7 @@ Play around with it and see if you can get it.  If you're stuck, take a peek at 
 
 Our layout looks pretty good, horizontally, but vertically we want to get our grid to fill the entire viewport and also disallow scrolling.
 
-[![basic_grid_layout](10-4.png)](http://aptobits.com/wp-content/uploads/2015/10/basic_grid_layout.png)
+![basic_grid_layout](10-4.png)
 
 Fixing the scrolling is simple, the ion-content directive has a scroll property that you can simply set to false.
 
@@ -183,7 +183,7 @@ Add these styles to www/css/style.css
 ```
 
 ...and voila!
-[![vertically_centered_grid](10-5.png)](http://aptobits.com/wp-content/uploads/2015/10/vertically_centered_grid.png)
+![vertically_centered_grid](10-5.png)]
 
 # Buttons
 
@@ -326,13 +326,13 @@ ion-content div.display {
 ```
 
 And here's what it looks like:
-[![simulator_with_buttons](10-6.png)](http://aptobits.com/wp-content/uploads/2015/10/simulator_with_buttons.png)
+![simulator_with_buttons](10-6.png)
 
 In the next post, we'll wire up the behavior and get everything so it's actually working.
 
 Other posts in this series:
 
-* [Getting Started with Cordova](http://aptobits.com/2015/10/getting-started-with-cordova/)
-* [Intro to Ionic](http://aptobits.com/2015/10/intro-to-ionic/)
-* Build a Calculator with Ionic - Part 1 of 3
-* [Build a Calculator with Ionic - Part 2 of 3](http://aptobits.com/2015/10/build-a-calculator-with-ionic-part-2/)
+* [Getting Started with Cordova](/getting-started-with-cordova)
+* [Intro to Ionic](/intro-to-ionic)
+* Build a Calculator with Ionic - Part 1 of 2
+* [Build a Calculator with Ionic - Part 2 of 2](/build-a-calculator-with-ionic-2)

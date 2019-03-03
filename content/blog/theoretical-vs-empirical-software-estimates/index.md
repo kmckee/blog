@@ -50,19 +50,10 @@ Card growth is another important metric to track as it affects your projections.
 * Team spends close to 0 time estimating.
 * Project managers have a much more active role in estimation.
 * Team is focused on finding the smallest slices that will deliver demonstrable value
-    * Small slices mean more options for the business (ability to pivot and defer less valuable work).
-    * Small slices increase team morale (sense of completion).
-    * Small slices lead to higher quality code (narrower focus by the team).
+  * Small slices mean more options for the business (ability to pivot and defer less valuable work).
+  * Small slices increase team morale (sense of completion).
+  * Small slices lead to higher quality code (narrower focus by the team).
 * Estimates are based on facts rather than the opinions of team members.
 * Increased transparency with your Product Owner and stakeholders.
 
 This certainly isn't the only way to run a team, but, I think it's underused in comparison to a lot of the more opinion based estimation techniques I see in use.  I'd be curious to hear if anyone else has any experience with other techniques that base estimation on empirical data.
-
-## Comments from WordPress
-
-* ![&#12304;&#36865;&#26009;&#28961;&#26009;&#12305;&#33050;&#20184;&#12365;&#12510;&#12483;&#12488;&#12524;&#12473;&#12288;&#12475;&#12511;&#12480;&#12502;&#12523;&#12288;&#20998;&#21106;&#12288;&#33050;&#12398;&#39640;&#12373; 25cm &#12505;&#12483;&#12489;](https://www.gravatar.com/avatar/70e90738b689bf880cbdec4e79c32d7b?d=identicon) **[&#12304;&#36865;&#26009;&#28961;&#26009;&#12305;&#33050;&#20184;&#12365;&#12510;&#12483;&#12488;&#12524;&#12473;&#12288;&#12475;&#12511;&#12480;&#12502;&#12523;&#12288;&#20998;&#21106;&#12288;&#33050;&#12398;&#39640;&#12373; 25cm &#12505;&#12483;&#12489;](http://www.siteconomics.ru/mlckeivg/604.html)** 2015-11-08T02:30:30Z
-  > &#65281;&#12502;&#12483;&#12463;&#12510;&#12540;&#12463;&#12375;&#12289;&#12371;&#12398;&#12452;&#12531;&#12479;&#12540;&#12493;&#12483;&#12488;&#12469;&#12452;&#12488;&#19978;&#12391;&#12356;&#12367;&#12388;&#12363;&#12398;&#26412;&#24403;&#12395;&#36062;&#12398;&#20869;&#23481;&#12434;
-* ![Elida](https://www.gravatar.com/avatar/4a98183938960547794e29b8fd56ac42?d=identicon) **[Elida](http://rochesternylocksmith.s3-website-us-east-1.amazonaws.com)** 2015-11-30T23:51:16Z
-  > Lost your car keys, or perhaps inadvertently broke in the ignition. These days,  > 
-  > the customer is king and the service industry needs tto respect the   > 
-  > customer. Never be alone: It is always better thqt you shall hafe someone withh you.

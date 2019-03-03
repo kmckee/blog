@@ -13,10 +13,10 @@ In this blog series, I'll walk you through building native mobile apps using HTM
 
 Other posts in this series:
 
-* [Getting Started with Cordova](http://aptobits.com/2015/10/getting-started-with-cordova/)
-* [Intro to Ionic](http://aptobits.com/2015/10/intro-to-ionic/)
-* [Build a Calculator with Ionic - Part 1 of 2](http://aptobits.com/2015/10/build-a-calculator-with-ionic/)
-* Build a Calculator with Ionic - Part 2 of 2 (Coming soon)
+* [Getting Started with Cordova](/getting-started-with-cordova)
+* [Intro to Ionic](/intro-to-ionic)
+* [Build a Calculator with Ionic - Part 1 of 2](/build-a-calculator-with-ionic-1)
+* [Build a Calculator with Ionic - Part 2 of 2](/build-a-calculator-with-ionic-2)
 
 # Prerequisities
 
@@ -32,29 +32,32 @@ Node.js is an open-source, cross-platform runtime environment for developing ser
 
 Node ships with a tool called the Node Package Manager, or npm for short. The package manager is a command line utility that is used to download and install node packages for your projects. As of the time of writing, there are over 190,000 node modules with an average of 360 new modules being added every day.
 
-[![module_counts](04-1.png)](04-1.png)
+![module_counts](04-1.png)
 <small>See [modulecounts.com](http://www.modulecounts.com) for updated stats.</small>
 
 Some node packages can also include command line utilities that are added to your PATH. When you install these packages, you'll want to install them globally by using the -g switch. Lets use npm to install a couple CLI utilities that we'll be using.
 
-<pre lang="bash">npm install -g cordova
-</pre>
+```shell
+npm install -g cordova
+```
 
 If you're on a mac and want to deploy to the iOS emulator you'll also want to install the ios simulator module.
 
-<pre lang="bash">npm install -g ios-sim
-</pre>
+```shell
+npm install -g ios-sim
+```
 
 ## Create a Cordova App
 
 To create a new Cordova app, you'll want to cd into whatever directory you keep your projects and run this cordova create command, passing in the directory name you would like to create the project in.
 
-<pre lang="bash">cd ~/code/
+```shell
+cd ~/code/
 cordova create hello_world
-</pre>
+```
 
 Let's take a look at what this created for us.
-[![vanilla_cordova_tree](04-2.png)](04-2.png)
+![vanilla_cordova_tree](04-2.png)
 
 #### config.xml
 
@@ -80,27 +83,30 @@ This is where most of your application code will live.  The index.html page cont
 
 It's a good idea to get a commit in at this point, just in case things get squirrelly.  
 
-<pre lang="bash">git init
+```shell
+git init
 git commit -am "First commit, vanilla cordova app"
-</pre>
+```
 
 ## Adding Platforms
 
 Before we can see our app running anywhere, we need to add one or more platforms.  For this tutorial we'll be adding the iOS and Android platforms.  Let's tell Cordova what platforms we'd like to target:
 
-<pre lang="bash">cordova platform add ios
+```shell
+cordova platform add ios
 cordova platform add android
-</pre>
+```
 
 ## Deploying to the iOS simulator
 
 Lets go ahead and run our app on an iOS simulator (assuming you're on a mac).  Open up a terminal in the root of your project and run the following command:
 
-<pre lang="bash">cordova emulate ios
-</pre>
+```shell
+cordova emulate ios
+```
 
 If you're following along at home and everything went well, you should see the iOS simulator spin up at this point and load an app that looks like this:
-[![vanilla_cordova](04-3.png)](04-3.png)
+![vanilla_cordova](04-3.png)
 
 ## Deploying to an Android Simulator
 
@@ -110,19 +116,29 @@ Unfortunately, getting an android emulator going is a little more involved.  If 
 
 The easiest way to deploy to a device is to connect a single device to your computer and then run:
 
-<pre lang="bash">cordova run ios --device
-</pre>
+```shell
+cordova run ios --device
+```
 
 or
 
-<pre lang="bash">cordova run android --device
-</pre>
+```shell
+cordova run android --device
+```
 
 ## Wrap up
 
 That's it!  At this point, you probably want to throw down another git commit.
 
-<pre lang="bash">git commit -am "Added iOS and Android platforms"
-</pre>
+```shell
+git commit -am "Added iOS and Android platforms"
+```
 
-With that out of your way, you're ready to start actually working on your app.  Before you start down that road, though, let's take a look at what ionic has to offer over a vanilla cordova installation.
+With that out of your way, you're ready to start actually working on your app.  Before you start down that road, though, let's [take a look at what ionic has to offer](/intro-to-ionic) over a vanilla cordova installation.
+
+Other posts in this series:
+
+* Getting Started with Cordova
+* [Intro to Ionic](/intro-to-ionic)
+* [Build a Calculator with Ionic - Part 1 of 2](/build-a-calculator-with-ionic-1)
+* [Build a Calculator with Ionic - Part 2 of 2](/build-a-calculator-with-ionic-2)

@@ -9,7 +9,7 @@ excerpt: "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provid
 
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. In this post I'm going to document my steps creating an EC2 instance and setting up a Jenkins CI server on it.  I'll assume limited familiarity with Amazon EC2, Linux, and Jenkins.
 
-# Spinning up an EC2 Instance
+## Spinning up an EC2 Instance
 
 You'll need to sign up for Amazon's EC2 service on the [Amazon Web Services](http://aws.amazon.com "Amazon Web Services") site if you haven't already.  After that you can head over to your [EC2 Console](https://console.aws.amazon.com/ec2/ "EC2 Console") and select "_Launch Instance_".  Select the Classic Wizard, then "_Ubuntu Server 12.04 LTS_" and leave it on 64-bit.  Accept the defaults on the next three screens, and then add a value for the Name tag.
 
@@ -25,7 +25,7 @@ You'll need to create a new security group.  Be sure to allow HTTP, HTTPS and S
 
 Click Launch, wait for the green light and you're all set!
 
-# SSH to the Instance
+## SSH to the Instance
 
 Amazon will complain about the file permissions on your key file, so we'll need to open up a terminal and make your key private before we can connect:
 
@@ -41,7 +41,7 @@ ssh -i ~/.ec2/kmckeeKey.pem ubuntu@ec2-XX-XXX-XX-XXX.us-west-2.compute.amazonaws
 
 Run that command in terminal, and if all goes well you should be connected to your instance.
 
-# Install nginx
+## Install nginx
 
 nginx, pronounced Engine-X, is a lightweight web server/reverse proxy that we're going to use to proxy port 80 over to port 8080 (which is what Jenkins runs on by default).  You might be able to skip this and just change Jenkins to run on port 80, but we're going to do it with nginx.  Why not?
 
@@ -54,7 +54,7 @@ sudo /etc/init.d/nginx start
 
 At this point you should be able to hit your EC2 instance from a browser and get back a page from nginx.  Jump back into the EC2 console, select your instance and grab the Public DNS URL to try it out.
 
-# Install Jenkins
+## Install Jenkins
 
 ```shell
 wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
@@ -63,17 +63,17 @@ sudo aptitude update
 sudo aptitude install jenkins
 ```
 
-# Start it!
+## Start it!
 
 ```shell
 sudo /etc/init.d/jenkins start
 ```
 
-# Configure nginx as a Reverse Proxy
+## Configure nginx as a Reverse Proxy
 
 We've already installed nginx, but now we need to jump back and configure it to act as a reverse proxy.  Any requests coming in on port 80 should be routed through to 8080 so that Jenkins handles them.
 
-# Open up the config file in vi
+## Open up the config file in vi
 
 ```shell
 sudo vi /etc/nginx/nginx.conf
@@ -115,7 +115,7 @@ sudo /etc/init.d/nginx restart
 
 Open up a browser and hit your site again.  You should see Jenkins!
 
-# Lock it down
+## Lock it down
 
 At this point your site is public and there's really nothing preventing someone coming and messing around on your server.
 
@@ -132,7 +132,7 @@ Next we're going to grant rights to your user name (even though we haven't creat
 
 Click the Save button, it will prompt you to create a new user, and you should be all set to start creating jobs.
 
-## Comments from WordPress
+### Comments from WordPress
 
 * ![Kim G](https://www.gravatar.com/avatar/3d46ded1734fa33f873b485d53ea8e3a?d=identicon) **Kim G** 2013-06-03T10:34:40Z
   > Awesome!!!

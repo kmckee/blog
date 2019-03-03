@@ -11,7 +11,7 @@ Continuous integration is great, but it's only as effective as the visibility of
 
 ![Traffic Light](06-1.jpg)
 
-# Shopping List
+## Shopping List
 
 * [Teensy 2.0 (with pins)](http://www.pjrc.com/store/teensy_pins.html "Teensy 2.0 (with pins)") - $19
 * [Breadboard and some wires](http://www.amazon.com/microtivity-400-point-Experiment-Breadboard-Jumper/dp/B004RXKWDQ/ref=sr_1_5?ie=UTF8&qid=1357508413&sr=8-5&keywords=breadboard) - $9
@@ -21,7 +21,7 @@ Continuous integration is great, but it's only as effective as the visibility of
 
 Total: $61
 
-# Light
+## Light
 
 When you turn the light on each of the lights will flicker randomly.  I was a little surprised when I opened the light that there wasn't really much in there.  All three of the lights are wired up in series and connected straight to the power source.  It turns out the light bulbs have a thermal switch inside of them that causes them to flicker on and off.  The first thing you'll want to do is replace those bulbs with some regular bulbs.  Next up, go ahead and cut all the positive lines that join the bulbs together.  You'll need to make the positive leads a little longer and hook each of them up to the relay.  Connect the positive line from the power cord into each of the relays.
 
@@ -39,11 +39,11 @@ Here's what the whole thing looks like:
 
 Connect the Teensy to your computer and use Arduino to deploy the [Teensy Light Controller sketch](https://github.com/kmckee/JenkinsTrafficLight/blob/master/TeensyLightControllerSketch/TeensyLightControllerSketch.ino "Teensy Light Controller Sketch") to the device.  After the firmware is on the device you can use the serial monitor feature in Arduino to test out the wiring.  If you send a "1" to the device it should turn on the red light.  Sending a 2 will turn on yellow, 3 is green.  5, 6, and 7 will turn off each of the lights.  The relay makes a nice clicking noise when a light is toggled.
 
-# The Console App
+## The Console App
 
 At this point you can turn the lights on and off by writing some integers to a serial port.  I threw together a console application that will poll a Jenkins server and push values to the light.  It's on GitHub - [go fork it](https://github.com/kmckee/JenkinsTrafficLight).
 
-## Comments from WordPress
+### Comments from WordPress
 
 * ![Kamal Sharma](https://www.gravatar.com/avatar/50af3c4a1490a02c0b0c96255a219d25?d=identicon) **Kamal Sharma** 2013-08-13T13:47:32Z
   > HI,

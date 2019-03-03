@@ -7,7 +7,7 @@ tags: ["Firebug", "Javascript"]
 excerpt: "I'm a huge fan of Firebug.  I tend to write most of my UI-centric Javascript right in the Firebug c..."
 ---
 
-# The Trouble with IFrames and Firebug
+## The Trouble with IFrames and Firebug
 
 I'm a huge fan of Firebug.  I tend to write most of my UI-centric Javascript right in the Firebug console so that I can run it and immediately see the results.  After I'm satisfied with the code I've written I'll cut it out of Firebug's console and paste it into its permanent home.  This probably isn't the most efficient workflow, but it works well for me because it provides really fast feedback.
 
@@ -19,7 +19,7 @@ var someElement = document.getElementById('someFrame').document.getElementById('
 
 That's pretty ugly, and if you're planning to actually use the code you're writing in the console you'll need to run through it all and remove all the code that drills down through the frames.  I'll pass.
 
-# Attaching to Frames with cd(window)
+## Attaching to Frames with cd(window)
 
 Firebug has a built in command that can attach the console to a different window:
 
@@ -36,7 +36,7 @@ That's a lot better than manually drilling down through any frames, plus my code
 * You need to remember the name or index of the frame you want to attach to.
 * If you have multiple levels of nested frames (...don't ask) it can be tedious and time consuming to drill down through them.
 
-# Enter FireIFrame
+## Enter FireIFrame
 
 The solution I came up with was to extend Firebug by adding a button that would allow the user to visually select a frame on the page to attach the console to.  Here's what it looks like in action:
 

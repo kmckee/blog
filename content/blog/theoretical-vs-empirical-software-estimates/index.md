@@ -9,7 +9,7 @@ excerpt: "Lean thinking tells us that any expenditure of resources that does not
 
 Lean thinking tells us that any expenditure of resources that does not create value for the customer is waste. If you could accurately tell your partners when your project would be complete, that would probably be incredibly valuable to them. So why, then, do some people consider it wasteful to have developers estimate?
 
-# Theoretical Estimation
+## Theoretical Estimation
 
 Most software estimation activities that I've seen in my career are what I'd consider to be theoretical estimation. This includes poker planning, t-shirt sizing, Fibonnaci sizing, etc. A few concerns I have with these approaches are:
 
@@ -25,11 +25,11 @@ The activity of estimating itself is waste, but even more than that you're going
 
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law. — Douglas Hofstadter, Gödel, Escher, Bach: An Eternal Golden Braid
 
-# Empirical Estimation
+## Empirical Estimation
 
 How can we get away from making up numbers, then?  You have options, but I'm going to briefly describe a pretty light weight approach that I've seen work well for a few different teams I've coached.
 
-## Small Story Cards
+### Small Story Cards
 
 You need to be working in small slices.  You should be doing this for a host of other reasons, but, it's particularly important if you're going to move away from having developers estimating.
 
@@ -37,7 +37,7 @@ If all of your cards are "Small", then you can just count the number of things t
 
 Of course all the other rules of story card slicing still apply.  Don't overslice your cards down into technical tasks.  All of your cards should still show _demonstrable_ progress.  Always ask yourself, "How will I demo this card to the business?"
 
-## Metrics
+### Metrics
 
 A couple of metrics that you'll want to keep track of are your card cycle time time and the growth rate of cards for your project.
 
@@ -45,7 +45,7 @@ Your card cycle time is the entire time that it's actively being worked on.  Th
 
 Card growth is another important metric to track as it affects your projections.  Based on the rate at which cards are being discovered (growth) and the rate at which cards are being completed we can project when we will complete some subset of work.
 
-### So, where does this leave you?
+#### So, where does this leave you?
 
 * Team spends close to 0 time estimating.
 * Project managers have a much more active role in estimation.

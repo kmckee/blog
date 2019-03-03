@@ -9,7 +9,7 @@ excerpt: "I put together a learning activity for a few teams I'm currently worki
 
 I put together a learning activity for a few teams I'm currently working with to help us get more familiar with Components in KnockoutJS.
 
-##### A few reasons to consider Components...
+## A few reasons to consider Components...
 
 The most obvious reason is re-use.  By creating a component that represents some chunk of html and it's corresponding behaviors you make it portable. You can drop that component into different spots on the page, or even different pages in your application, and keep your code nice and DRY.
 

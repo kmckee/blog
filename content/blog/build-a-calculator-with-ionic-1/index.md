@@ -16,7 +16,7 @@ In this tutorial, we're going to build a basic calculator app using Ionic.  The 
 
 Lets get to it.  
 
-# Creating the Project
+## Creating the Project
 
 Cd into wherever you keep your code, and then create a new blank ionic app:
 
@@ -61,7 +61,7 @@ I recommend opening your dev tools on the right side, this gives you a phone sha
 
 Open up www/index.html and change the H1 element's text from "Ionic Blank Starter" to "Calculator".  You should see the page immediately refresh in your browser and reflect the changes.  
 
-# Grids
+## Grids
 
 Ionic ships with a grid system that uses flexbox to make it really easy to lay things out.  All of the devices supported by Ionic/Cordova support flexbox, so even though it's a relatively newer feature in desktop browsers we're free to use it in this environment.  
 
@@ -85,7 +85,7 @@ Will look like this on a device:
 
 You can also use the grid system to do row and column spanning, explicit percentage sizing of columns, and a bunch of other things.  For what we're doing, just knowing the above is enough.  If your interested in learning the other things you can do, check out the [Ionic Documentation for Grids](http://ionicframework.com/docs/components/#grid-explicit).
 
-## Laying out the Calculator View
+### Laying out the Calculator View
 
 Thinking about our calculator, we need one row with a column that occupies 100% of the width for the calculator's display.  After that we need a grid composed of 4 rows, each containing 4 equal sized columns.
 
@@ -185,7 +185,7 @@ Add these styles to www/css/style.css
 ...and voila!
 ![vertically_centered_grid](10-5.png)]
 
-# Buttons
+## Buttons
 
 Lets put some buttons on our grid.  We can use a standard button element for now, and just apply a few [Ionic button classes](http://ionicframework.com/docs/components/#outlined-buttons) to style it.
 

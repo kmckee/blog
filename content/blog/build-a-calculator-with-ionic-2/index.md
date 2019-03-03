@@ -9,7 +9,7 @@ excerpt: "In the previous post, we made a pretty calculator that doesn't really 
 
 In the [previous post](/build-a-calculator-with-ionic-1), we made a pretty calculator that doesn't really do anything.  In this post, we'll be focused on making the calculator actually work.  
 
-# Adding Behavior
+## Adding Behavior
 
 Let's create a controller and get it associated with our view.  To start out with, let's get the clear button working.  We can expand from there, but that's probably the simplest place to start.
 
@@ -70,7 +70,7 @@ Finally, don't forget to include the controller script!
 
 With all that in place, you should be able to run your app and see the alert pop up when you click the button.  It's a start.
 
-## More Behavior
+### More Behavior
 
 Thinking about the buttons on the calculator, they only really do 3 different things.
 
@@ -116,7 +116,7 @@ angular.module('starter')
 
 One thing worth noting here, the clicked function requires that you pass an argument to it, and the clear and equals functions do not.  We should probably wrap these buttons up in a directive, but, not now.
 
-## Changing the Display
+### Changing the Display
 
 We need to create a variable on our controller's scope that will contain the equation that's currently being displayed, and we want to bind that text to the display div.
 
@@ -166,7 +166,7 @@ angular.module('starter')
 });
 ```
 
-## Current State
+### Current State
 
 It's starting to actually look like a calculator!  It can even accurately calculate the result of an infinite number of equations (<small>as long as they equal 100</small>).
 
@@ -175,7 +175,7 @@ Check it out:
 
 This is another great place to throw down a git commit.
 
-# Using a Third Party Library to Calculate
+## Using a Third Party Library to Calculate
 
 JavaScript has a fantastic community built around it, with tons of libraries available to do just about anything you can think of.  Ionic uses a tool called Bower to manage it's JS dependencies.  If you're familiar with pip (Python), NuGet (.NET), or Bundler (ruby) it's pretty similar.
 
@@ -226,7 +226,7 @@ angular.module('starter')
 
 This code works, and it makes our calculator function pretty decently.  Play around with it and see for yourself.
 
-## Extracting a Calculator Service
+### Extracting a Calculator Service
 
 This is not a good pattern to follow, however, for a few reasons.  
 
@@ -267,7 +267,7 @@ angular.module('starter')
 
 I registered a factory function with angular that knows how to create a calculator object.  The calculator object encapsulates all knowledge of Epsilon, and would theoretically allow us to swap out our calculator library without having to change the rest of our app.  Notice on line 2 that the calculator is being passed into the controller by Angular.  Angular matches the factory name with the parameter name and injects the dependency for you.
 
-# Using Cordova Plugins
+## Using Cordova Plugins
 
 Cordova Plugins can be used to give you access to native functionality that you wouldn't normally be able to use from a web application.  They do this by injecting a javascript api into the dom that is able to talk to native code using the Cordova Bridge.  Most of that is transparent to you as a consumer of the plugin, really all that you need to know is that when you install a plugin it will create a javascript api that lets you do things you couldn't normally do from JavaScript.
 
@@ -283,7 +283,7 @@ I highlighted a couple things you'll want to keep an eye on when searching for p
 
 I also like to open the GitHub repository for any plugins I'm considering to see how healthy they look over there, and also check out their documentation and see if I'll be able to figure out how to use the it.
 
-## Adding the Plugin
+### Adding the Plugin
 
 Make sure you've done a git commit, then tell Ionic to add the plugin:
 

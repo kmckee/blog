@@ -11,7 +11,7 @@ I wrote all of my content in Wordpress because it was the cool thing to do in 20
 
 Fast forward a few years to today.  I'm moving my content over to Gatsby which is a static site generator that's built on React and GraphQL.  I think this is going to be a much better way to store my content, because everything that I create is just markdown files and images on disk.
 
-## Recovering My Old Content
+## Recovering Old Content
 
 The first challenge was finding a way to extract all of the text content from the wordpress XML file.  Luckily, there's a node module for that!
 
@@ -28,7 +28,7 @@ const options = {
   withMetadata: true,
   withImageDownload: false,
   withComment: true,
-}
+};
 wpxml2md('wordpress.xml', 'dest', options)
 .then(() => {
   console.log('Completed!!');
@@ -52,11 +52,11 @@ I was able to recover all of the images I was missing, and pull everything toget
 
 I have some housekeeping to do to get this blog back up to snuff:
 
-[] Look into a youtube plugin.
-[] Set up syntax highlighting with Prism.
-[] Find more of the broken links and missing images.
-[] Actually write new content.
+* Look into a youtube plugin to simplify embedding videos
+* Set up syntax highlighting with Prism.
+* Find more of the broken links and missing images.
+* Actually write new content.
 
-My goal is to keep my markdown as vanilla as possible, so that 8 years from now I don't find myself in the same position I was this morning.
+My goal is to keep my markdown as vanilla as possible so that 8 years from now I don't find myself in the same position I was in this morning.
 
 Also, thanks Donny for inspiring me to get writing again!

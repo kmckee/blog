@@ -1,10 +1,6 @@
 ---
-path: "/posts/2015/04/knockout-components/"
 date: "2015-04-18T14:25:14Z"
 title: "Getting Familiar with Knockout Components"
-categories: ["Tutorials"]
-tags: ["Javascript", "KnockoutJS"]
-excerpt: "I put together a learning activity for a few teams I'm currently working with to help us get more f..."
 ---
 
 I put together a learning activity for a few teams I'm currently working with to help us get more familiar with Components in KnockoutJS.

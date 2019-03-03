@@ -1,10 +1,6 @@
 ---
-path: "/posts/2012/08/fireframe-extending-firebug/"
 date: "2012-08-22T01:48:57Z"
 title: "FireIFrame - Extending Firebug to Simplify Working with Frames"
-categories: ["Projects"]
-tags: ["Firebug", "Javascript"]
-excerpt: "I'm a huge fan of Firebug.  I tend to write most of my UI-centric Javascript right in the Firebug c..."
 ---
 
 ## The Trouble with IFrames and Firebug

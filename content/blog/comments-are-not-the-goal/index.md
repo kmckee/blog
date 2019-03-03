@@ -1,10 +1,6 @@
 ---
-path: "/posts/2012/10/comments-are-not-the-goal/"
 date: "2012-10-01T23:48:23Z"
 title: "Comments are not the Goal"
-categories: ["Opinions"]
-tags: ["C#", "comments", "naming"]
-excerpt: "I used to think that writing more comments increased the readability of my code, but I've come to r..."
 ---
 
 I used to think that writing more comments increased the readability of my code, but I've come to realize that **comments frequently hurt readability**. That might sound a little trollish, but here's why I think it's true:

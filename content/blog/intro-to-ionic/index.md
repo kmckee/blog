@@ -1,10 +1,6 @@
 ---
-path: "/posts/2015/10/intro-to-ionic/"
 date: "2015-10-04T18:18:52Z"
 title: "Intro to Ionic"
-categories: ["Tutorials"]
-tags: ["Cordova", "Ionic", "Mobile"]
-excerpt: "Now that you've mastered all things Cordova in the previous blog post, let's take a look at Ionic a..."
 ---
 
 Now that you've mastered all things Cordova in the [previous blog post](/getting-started-with-cordova), let's take a look at Ionic and see where that fits in.  

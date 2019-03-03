@@ -1,10 +1,6 @@
 ---
-path: "/posts/2015/10/feedback-loops/"
 date: "2015-10-03T14:12:20Z"
 title: "Feedback Loops"
-categories: ["Opinions"]
-tags: ["feedback", "process"]
-excerpt: "Building great software is all about feedback.  The faster you're getting feedback about what you'r..."
 ---
 
 Building great software is all about feedback.  

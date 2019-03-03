@@ -1,10 +1,6 @@
 ---
-path: "/posts/2011/10/babys-first-foods/"
 date: "2011-10-25T02:01:03Z"
 title: "Baby's First Foods"
-categories: ["Projects"]
-tags: ["C#", "Windows Phone"]
-excerpt: "I've been playing around with Windows Phone development quite a bit lately.  I'm currently getting ..."
 ---
 
 I've been playing around with Windows Phone development quite a bit lately.  I'm currently getting ready to submit my first application to the marketplace - "Baby's First Foods".

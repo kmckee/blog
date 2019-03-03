@@ -1,10 +1,6 @@
 ---
-path: "/posts/2014/01/hacking-a-hexbug-robot/"
 date: "2014-01-11T03:18:03Z"
 title: "Hacking a HexBug Robot"
-categories: ["Projects"]
-tags: ["arduino", "ruby", "toy hacking"]
-excerpt: "I found one of these little HEXBUG Hexbug Spider (colors may vary) on Amazon and thought it might b..."
 ---
 
 I found one of these little [HEXBUG Hexbug Spider](http://www.amazon.com/gp/product/B004HL0A12/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004HL0A12&linkCode=as2&tag=aptobits-20) on Amazon and thought it might be fun to try and hook an Arduino up to it.  It's about the size of a fist and is controlled by an infrared remote control.

@@ -1,10 +1,6 @@
 ---
-path: "/posts/2012/09/setting-up-jenkins-ci-on-an-amazon-ec2-linux-instance/"
 date: "2012-09-01T05:33:18Z"
 title: "Setting up Jenkins CI on an Amazon EC2 Linux Instance"
-categories: ["Tutorials"]
-tags: ["CI", "EC2", "Jenkins", "Linux"]
-excerpt: "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity..."
 ---
 
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. In this post I'm going to document my steps creating an EC2 instance and setting up a Jenkins CI server on it.  I'll assume limited familiarity with Amazon EC2, Linux, and Jenkins.

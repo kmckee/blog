@@ -1,10 +1,6 @@
 ---
-path: "/posts/2015/10/build-a-calculator-with-ionic/"
 date: "2015-10-10T20:23:37Z"
 title: "Build a Calculator with Ionic - Part 1 of 2"
-categories: ["Tutorials"]
-tags: ["Cordova", "Ionic", "Mobile"]
-excerpt: "In this tutorial, we're going to build a basic calculator app using Ionic.  The calculator app is r..."
 ---
 
 In this tutorial, we're going to build a basic calculator app using Ionic.  The calculator app is relatively simple, but you'll learn the following along the way:

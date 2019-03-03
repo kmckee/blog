@@ -3,7 +3,7 @@ date: "2019-03-03"
 title: "Blog Reboot 2019"
 ---
 
-It's been a while since I've written any blog posts (4 years!), and after watching a coworker take the dive into blogging I figured it was high time for me to get back in the habit of writing.  We'll see if that sticks, or not.
+It's been a while since I've written any blog posts (4 years!), and after watching a coworker take the dive into blogging I figured it was high time for me to get back in the habit of writing about what I'm learning.
 
 I started blogging in 2011 and continued through sometime in 2015.  Over that time I created around a dozen different posts that were focused on projects I was working on, technology I was learning, and a few opinion pieces related to software development.
 
@@ -11,7 +11,7 @@ I wrote all of my content in Wordpress because it was the cool thing to do in 20
 
 Fast forward a few years to today.  I'm moving my content over to Gatsby which is a static site generator that's built on React and GraphQL.  I think this is going to be a much better way to store my content, because everything that I create is just markdown files and images on disk.
 
-## Recovering My Old Content: Text
+## Recovering My Old Content
 
 The first challenge was finding a way to extract all of the text content from the wordpress XML file.  Luckily, there's a node module for that!
 
@@ -38,13 +38,13 @@ wpxml2md('wordpress.xml', 'dest', options)
 });
 ```
 
-## Recovering My Old Content: Images
+## Recovering Images
 
 The `wpxml2md` module made an attempt to download all of the image references that it found inside the wordpress export.  Unfortunately, my site was long so that resulted in a whole bunch of 404's.
 
 I was close to giving up on recovering the images, and then I figured I'd give my old friend the WaybackMachine a try.  If you've never seen this, it's an incredibly useful site that is regularly crawling and archiving the internet.
 
-Curious what stackoverflow.com looked like in 2005?
+Curious what GitHub's pricing was like in 2008?  [It's archived](https://web.archive.org/web/20080621111340/http://github.com/plans).
 
 I was able to recover all of the images I was missing, and pull everything together in an afternoon.
 
@@ -57,6 +57,6 @@ I have some housekeeping to do to get this blog back up to snuff:
 [] Find more of the broken links and missing images.
 [] Actually write new content.
 
-My goal is to keep my markdown as vanilla as possible, so that 8 years from now I don't find myself locked in to anything
+My goal is to keep my markdown as vanilla as possible, so that 8 years from now I don't find myself in the same position I was this morning.
 
 Also, thanks Donny for inspiring me to get writing again!

@@ -1,6 +1,7 @@
 ---
 date: "2015-04-18T14:25:14Z"
 title: "Getting Familiar with Knockout Components"
+description: "This exercise can help increase your comfort level with using Components within KnockoutJS"
 ---
 
 I put together a learning activity for a few teams I'm currently working with to help us get more familiar with Components in KnockoutJS.

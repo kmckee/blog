@@ -1,6 +1,7 @@
 ---
 date: "2015-10-10T20:23:37Z"
 title: "Build a Calculator with Ionic - Part 1 of 2"
+description: "Developing a Calculator using the Ionic Framework"
 ---
 
 In this tutorial, we're going to build a basic calculator app using Ionic.  The calculator app is relatively simple, but you'll learn the following along the way:

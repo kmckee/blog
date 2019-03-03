@@ -1,6 +1,7 @@
 ---
 date: "2019-03-03"
 title: "Blog Reboot 2019"
+description: "Migrating blog from WordPress to Gatsby"
 ---
 
 It's been a while since I've written any blog posts (4 years!), and after watching a coworker take the dive into blogging I figured it was high time for me to get back in the habit of writing about what I'm learning.

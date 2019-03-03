@@ -1,6 +1,7 @@
 ---
 date: "2015-10-11T20:16:50Z"
 title: "Build a Calculator with Ionic - Part 2 of 2"
+description: "Developing a Calculator using the Ionic Framework"
 ---
 
 In the [previous post](/build-a-calculator-with-ionic-1), we made a pretty calculator that doesn't really do anything.  In this post, we'll be focused on making the calculator actually work.  

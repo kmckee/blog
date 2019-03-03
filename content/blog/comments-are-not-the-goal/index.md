@@ -1,6 +1,7 @@
 ---
 date: "2012-10-01T23:48:23Z"
 title: "Comments are not the Goal"
+description: "Code comments are sometimes harmful; your goal should not be creating 'well commented' code."
 ---
 
 I used to think that writing more comments increased the readability of my code, but I've come to realize that **comments frequently hurt readability**. That might sound a little trollish, but here's why I think it's true:

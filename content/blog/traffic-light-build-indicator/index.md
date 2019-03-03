@@ -1,6 +1,7 @@
 ---
 date: "2013-01-06T23:48:04Z"
 title: "Traffic Light Build Indicator"
+description: "Building an IoT traffic light that synchronizes with your Jenkins CI builds."
 ---
 
 Continuous integration is great, but it's only as effective as the visibility of the build status.  You can use things like email notifications or [Hudson Tray Tracker](http://code.google.com/p/hudson-tray-tracker/ "Hudson Tray Tracker") to help increase the visibility, but I wanted something physical that could radiate the current build status.  Something everyone could see; even while you're grabbing a cup of coffee.  So, I decided to try and make a traffic light build indicator.

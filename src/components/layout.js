@@ -7,6 +7,7 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
+    const siteTitleFont = `Gloria Hallelujah, Permanent Marker, Montserrat, sans-serif`
     let header
 
     if (location.pathname === rootPath) {
@@ -16,6 +17,8 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            fontFamily: siteTitleFont,
+            fontWeight: 100,
           }}
         >
           <Link
@@ -34,7 +37,8 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: siteTitleFont,
+            fontWeight: 100,
             marginTop: 0,
           }}
         >
@@ -63,9 +67,8 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          &copy; {new Date().getFullYear()}, Kyle McKee
+          Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
     )

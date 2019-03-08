@@ -8,10 +8,12 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { SocialIcon } from "react-social-icons"
 
 import { rhythm } from "../utils/typography"
 
 function Bio() {
+  const socialStyles = {boxShadow: `none`, margin: `0 .2rem`, height: 30, width: 30};
   return (
     <StaticQuery
       query={bioQuery}
@@ -37,13 +39,16 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Written by <strong>{author}</strong> who builds products, teams, and devs in Cleveland, OH.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
-            </p>
+            <div style={{display: `flex`, flexDirection: `column`, alignItems: `center`}}>
+              <p style={{ marginBottom: 0}}>
+                I'm growing software, teams, and myself in CLE.
+              </p>
+              <div style={{alignSelf: `flex-end`}}>
+                <SocialIcon url={`https://github.com/${social.github}`} style={socialStyles} />
+                <SocialIcon url={`https://www.linkedin.com/in/${social.linkedin}`} style={socialStyles} />
+                <SocialIcon url={`https://twitter.com/${social.twitter}`} style={socialStyles} />
+              </div>
+            </div>
           </div>
         )
       }}
@@ -64,7 +69,9 @@ const bioQuery = graphql`
       siteMetadata {
         author
         social {
-          twitter
+          twitter,
+          github,
+          linkedin
         }
       }
     }

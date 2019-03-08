@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Kyle McKee's Blog`,
+    title: `Kyle McKee`,
     author: `Kyle McKee`,
     description: `A blog about Software Development and hobby electronics.`,
-    siteUrl: `https://kmckee.com/`,
+    siteUrl: `https://kyle-mckee.com/`,
     social: {
-      twitter: `kmckee8372`,
-      github: `kmckee`
+      twitter: `mckee_kyle`,
+      github: `kmckee`,
+      linkedin: 'kylewmckee'
     },
   },
   plugins: [
@@ -33,6 +34,13 @@ module.exports = {
             options: {
               maxWidth: 590,
             },
+          },
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 400
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,

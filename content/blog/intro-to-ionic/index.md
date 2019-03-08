@@ -1,7 +1,6 @@
 ---
 date: "2015-10-04T18:18:52Z"
 title: "Intro to Ionic"
-description: "An introduction to mobile application development using the Ionic Framework."
 ---
 
 Now that you've mastered all things Cordova in the [previous blog post](/getting-started-with-cordova), let's take a look at Ionic and see where that fits in.  

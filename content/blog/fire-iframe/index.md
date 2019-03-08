@@ -1,7 +1,6 @@
 ---
 date: "2012-08-22T01:48:57Z"
 title: "FireIFrame - Extending Firebug to Simplify Working with Frames"
-description: "FireIFrame is an extension to Firebug that simplifies using the developer console with IFrames"
 ---
 
 ## The Trouble with IFrames and Firebug

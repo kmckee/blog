@@ -8,12 +8,11 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import { SocialIcon } from "react-social-icons"
 
+import Social from './social';
 import { rhythm } from "../utils/typography"
 
 function Bio() {
-  const socialStyles = {boxShadow: `none`, margin: `0 .2rem`, height: 30, width: 30};
   return (
     <StaticQuery
       query={bioQuery}
@@ -44,9 +43,7 @@ function Bio() {
                 I'm growing software, teams, and myself in CLE.
               </p>
               <div style={{alignSelf: `flex-end`}}>
-                <SocialIcon url={`https://github.com/${social.github}`} style={socialStyles} />
-                <SocialIcon url={`https://www.linkedin.com/in/${social.linkedin}`} style={socialStyles} />
-                <SocialIcon url={`https://twitter.com/${social.twitter}`} style={socialStyles} />
+                <Social {...social} />
               </div>
             </div>
           </div>

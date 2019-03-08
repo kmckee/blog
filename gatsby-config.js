@@ -8,7 +8,7 @@ module.exports = {
       twitter: `mckee_kyle`,
       github: `kmckee`,
       linkedin: 'kylewmckee'
-    },
+    }
   },
   plugins: [
     {

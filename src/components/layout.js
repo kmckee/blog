@@ -7,10 +7,11 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    const siteTitleFont = `Gloria Hallelujah, Permanent Marker, Montserrat, sans-serif`
+    const resumePath = `${__PATH_PREFIX__}/resume`
+    const siteTitleFont = `Permanent Marker, Montserrat, sans-serif`
     let header
 
-    if (location.pathname === rootPath) {
+    if (location.pathname === rootPath || location.pathname === resumePath) {
       header = (
         <h1
           style={{

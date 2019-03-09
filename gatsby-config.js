@@ -16,6 +16,7 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+        ignore: [`**/_*`], // ignore files starting with an underscore
       },
     },
     {

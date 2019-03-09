@@ -7,10 +7,11 @@ import Education from '../components/resume/education';
 import Volunteer from '../components/resume/volunteer';
 import EmphasizedList from '../components/resume/emphasizedList';
 import Award from '../components/resume/award';
+import SkillDisplay from '../components/resume/skillDisplay';
 
 import resume from '../resumeData';
 
-const AboutPage = ({data, location}) => {
+const ResumePage = ({data, location}) => {
     const social = data.site.siteMetadata.social;
     const experience = resume.experience.map(xp => <Experience key={xp.title + xp.position} {...xp}/>);
     const education = resume.education.map(ed => <Education key={ed.degree} {...ed}/>);
@@ -44,6 +45,7 @@ const AboutPage = ({data, location}) => {
 
                 <section>
                     <h2>Skills</h2>
+                    <SkillDisplay />
                     <EmphasizedList items={resume.skills} />
                 </section>
 
@@ -67,7 +69,7 @@ const AboutPage = ({data, location}) => {
     );
 };
 
-export default AboutPage
+export default ResumePage
 
 export const pageQuery = graphql`
   query {

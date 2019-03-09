@@ -124,15 +124,6 @@ const data = {
             custom software for non-profit organizations.`
         }
     ],
-    skills: [
-        { name: 'Test Driven Development (London & Chicago styles)', isPrimary: true },
-        { name: 'Acceptance Test Driven Development', isPrimary: true },
-        { name: 'Agile Coaching', isPrimary: true },
-        { name: 'Pair Programming' },
-        { name: 'Story Mapping' },
-        { name: 'Story Slicing' }, 
-        { name: 'Facilitation' }
-    ],
     awards: [
         { 
             name: '1st place - Cleveland Medical Hackathon', 
@@ -140,38 +131,6 @@ const data = {
             description: 'The IQ Sensor team set of to measure blood pressure through a compact wearable device that a patient could easily wear on the arm. This device’s flexible sensor mimics a traditional Sphygmomanometer (blood pressure cuff) reporting to an app the patient’s real time blood pressure. The idea was centered on mounting the sensor, along with the electronic components, on the bicep and without the need of an airbag to read the patient’s blood pressure. The five members of the team possessed a mix of industrial, medical and software experience. They included Mike Hoffman (Cleveland Clinic), Kyle Reissner (Rockwell Automation), Kyle McKee (LeanDog), Dr. Morteza Vatani (The University of Akron) and Ryan Jefferis (biomedical engineering grad student from Cornell University).',
             url: 'https://www.cleveland.com/business/2015/09/first_cleveland_medical_hackat_1.html' 
         }
-    ],
-    languages: [
-        { name: 'JavaScript (ES6+)', isPrimary: true },
-        { name: 'C#', isPrimary: true },
-        { name: 'HTML/CSS', isPrimary: true },
-        { name: 'Ruby' },
-        { name: 'SQL' },
-    ],
-    technologies: [
-        [
-            { name: 'React', isPrimary: true }, 
-            { name: 'ASP.NET MVC Core' }
-        ],
-        [
-            { name: 'Jest', isPrimary: true }, 
-            { name: 'XUnit', isPrimary: true },
-            { name: 'RSpec' }
-        ],
-        [
-            { name: 'SQL Server', isPrimary: true }, 
-            { name: 'MongoDB', isPrimary: true },
-            { name: 'CouchDB' }
-        ],
-        [
-            { name: 'GIT', isPrimary: true }, 
-            { name: 'AWS', isPrimary: true },
-            { name: 'Jenkins', isPrimary: true },
-            { name: 'Octopus', isPrimary: true },
-            { name: 'Kubernetes' },
-            { name: 'GCP' },
-            { name: 'Azure' }
-        ]
     ]
 };
 export default data;

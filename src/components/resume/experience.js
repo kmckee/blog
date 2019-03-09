@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Experience = (props) => {
-    const {title, location, position, description, footnote} = props;
+    const {title, position, description, footnote} = props;
     return (
         <div key={`${title}-${position}`}>
-            <h4>{title}, {location} - {position}</h4>
+            <div style={{margin: '1em 0', fontWeight: 'bold'}}>
+                {title} - {position}
+            </div>
             <p>{description}</p>
             {footnote ? <p>{footnote}</p> : null}
         </div>

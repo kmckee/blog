@@ -1,33 +1,29 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import Social from '../components/social';
 import Experience from '../components/resume/experience';
 import Education from '../components/resume/education';
 import Volunteer from '../components/resume/volunteer';
-import EmphasizedList from '../components/resume/emphasizedList';
 import Award from '../components/resume/award';
 import SkillDisplay from '../components/resume/skillDisplay';
 
 import resume from '../resumeData';
 
 const ResumePage = ({data, location}) => {
-    const social = data.site.siteMetadata.social;
     const experience = resume.experience.map(xp => <Experience key={xp.title + xp.position} {...xp}/>);
     const education = resume.education.map(ed => <Education key={ed.degree} {...ed}/>);
     const volunteer = resume.volunteerWork.map(v => <Volunteer key={v.title + v.start} {...v}/>);
     const award = resume.awards.map(a => <Award key={a.name + a.date} {...a}/>);
-    const technology = resume.technologies.map((t, index) => <EmphasizedList key={index} items={t} />);
     return (
         <Layout location={location} title={resume.name}>
             <header>
                 <p>{resume.summary}</p>
-                <address>
-                    Contact Me
-                    <Social {...social} />
-                </address>
             </header>
             <main>
+                <section>
+                    <h2>Skills</h2>
+                    <SkillDisplay />
+                </section>
                 <section>
                     <h2>Experience</h2>
                     {experience}
@@ -44,24 +40,8 @@ const ResumePage = ({data, location}) => {
                 </section>
 
                 <section>
-                    <h2>Skills</h2>
-                    <SkillDisplay />
-                    <EmphasizedList items={resume.skills} />
-                </section>
-
-                <section>
                     <h2>Awards</h2>
                     {award}
-                </section>
-
-                <section>
-                    <h2>Languages</h2>
-                    <EmphasizedList items={resume.languages} />
-                </section>
-
-                <section>
-                    <h2>Technologies</h2>
-                    {technology}
                 </section>
 
             </main>
@@ -70,18 +50,3 @@ const ResumePage = ({data, location}) => {
 };
 
 export default ResumePage
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        social {
-          twitter,
-          github,
-          linkedin
-        }
-      }
-    }
-  }
-`

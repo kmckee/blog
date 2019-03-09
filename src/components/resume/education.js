@@ -1,10 +1,12 @@
 import React from 'react';
 
 const Experience = (props) => {
-    const { title, location, degree, description } = props;
+    const { title, degree, description } = props;
     return (
         <div>
-            <h4>{title}, {location} - {degree}</h4>
+            <div style={{margin: '1em 0', fontWeight: 'bold'}}>
+                {title} - {degree}
+            </div>
             <p>{description}</p>
         </div>
     );

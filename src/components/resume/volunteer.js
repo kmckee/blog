@@ -4,7 +4,9 @@ const Volunteer = (props) => {
     const {title, position, description} = props;
     return (
         <div>
-            <h4>{title} - {position}</h4>
+            <div style={{margin: '1em 0', fontWeight: 'bold'}}>
+                {title} - {position}
+            </div>
             <p>{description}</p>
         </div>
     );

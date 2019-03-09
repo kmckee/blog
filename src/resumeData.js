@@ -5,10 +5,11 @@ const data = {
     and startup environments.`,
     experience: [
         {
-            title: 'We Can Code IT',
-            location: 'Cleveland OH',
+            company: 'We Can Code IT',
+            color: '#e7276f',
+            location: 'Cleveland, OH',
             position: 'Director of Education',
-            start: 'April 2018',
+            start: `2018`,
             finish: 'Present',
             description: `Ensuring our online and in-person bootcamp 
             students receive the highest quality software development 
@@ -17,10 +18,11 @@ const data = {
             Columbus, and online programs.`
         },
         {
-            title: 'AptoBits LLC',
+            company: 'AptoBits LLC',
+            color: 'rgba(19, 72, 126, 1)',
             location: 'Solon, OH',
             position: 'Consultant/Owner',
-            start: 'December, 2012',
+            start: `2012`,
             finish: 'Present',
             description: `Independent consulting work coaching, mentoring 
             and training developers of all skill levels on Agile principles 
@@ -34,40 +36,44 @@ const data = {
             Medical Mutual of Ohio, Asurint.`
         },
         {
-            title: 'We Can Code IT',
+            company: 'We Can Code IT',
+            color: '#e7276f',
             location: 'Cleveland, OH',
             position: 'Sr. Software Dev. Instructor',
-            start: 'October 2017',
-            finish: 'April 2018',
+            start: `2017`,
+            finish: `2018`,
             description: `Part-time position educating and training adult 
             students in C#, OOP, MVC (ASP.NET), TDD, and web development.`
         },
         {
-            title: 'Hyland Software',
+            company: 'Hyland Software',
+            color: '#51bc50',
             location: 'Westlake, OH',
             position: 'Developer',
-            start: 'March 2011',
-            finish: 'September 2012',
+            start: `2011`,
+            finish: `2012`,
             description: `Part of the team that developed the web-based 
             client that is part of Hyland’s OnBase enterprise content 
             management solution.`
         },
         {
-            title: 'SIRVA Relocation',
+            company: 'SIRVA Relocation',
+            color: '#828384',
             location: 'Independence, OH',
             position: 'Developer',
-            start: 'February 2009',
-            finish: 'March 2011',
+            start: `2009`,
+            finish: `2011`,
             description: `Worked as a Developer on a SCRUM team creating 
             a web based, customer facing workflow application that manages 
             corporate relocations of customer’s employees.`
         },
         {
-            title: 'Invacare Corporation',
+            company: 'Invacare Corporation',
+            color: '#0052a1',
             location: 'Elyria, OH',
             position: 'CAD Systems Specialist',
-            start: 'June 2001',
-            finish: 'February 2009',
+            start: `2001`,
+            finish: `2009`,
             description: `Developed a web based system that acts as the 
             primary source of engineering blueprints and their related 
             engineering data used in production plants globally.`

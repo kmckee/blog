@@ -1,17 +1,16 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import Experience from '../components/resume/experience';
 import Education from '../components/resume/education';
 import Volunteer from '../components/resume/volunteer';
 import Award from '../components/resume/award';
 import SkillDisplay from '../components/resume/skillDisplay';
+import ExperienceTimeline from '../components/resume/experienceTimeline';
 import SEO from "../components/seo"
 
 import resume from '../resumeData';
 
 const ResumePage = ({location}) => {
-    const experience = resume.experience.map(xp => <Experience key={xp.title + xp.position} {...xp}/>);
     const education = resume.education.map(ed => <Education key={ed.degree} {...ed}/>);
     const volunteer = resume.volunteerWork.map(v => <Volunteer key={v.title + v.start} {...v}/>);
     const award = resume.awards.map(a => <Award key={a.name + a.date} {...a}/>);
@@ -31,7 +30,7 @@ const ResumePage = ({location}) => {
                 </section>
                 <section>
                     <h2>Experience</h2>
-                    {experience}
+                    <ExperienceTimeline experiences={resume.experience} />
                 </section>
 
                 <section>
@@ -48,7 +47,6 @@ const ResumePage = ({location}) => {
                     <h2>Awards</h2>
                     {award}
                 </section>
-
             </main>
         </Layout>
     );

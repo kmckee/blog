@@ -38,7 +38,8 @@
     "typeface-montserrat": "0.0.54",
     "typeface-permanent-marker": "^0.0.72",
     "typography": "^0.16.18",
-    "typography-theme-parnassus": "^0.16.19"
+    "typography-theme-parnassus": "^0.16.19",
+    "vertical-timeline-component-for-react": "^1.0.6"
   },
   "devDependencies": {
     "prettier": "^1.16.4",

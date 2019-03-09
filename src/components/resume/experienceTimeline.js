@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
 
 class ExperienceTimeline extends Component {
+    componentDidMount() {
+        // I should open a pr add this level of control to npm package...
+        document.querySelector('.timeline--wrapper').style.padding = "0 12px";
+    }
     render() {
         const {experiences} = this.props;
         const items = experiences.map((xp, index) => {

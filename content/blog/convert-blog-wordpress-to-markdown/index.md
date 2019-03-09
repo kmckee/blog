@@ -1,19 +1,19 @@
 ---
 date: "2019-03-03"
-title: "Getting Back to Blogging"
+title: "Converting Blog from WordPress to Markdown"
 ---
 
 It's been a while since I've written any blog posts (4 years!), and after watching a coworker take the dive into blogging I figured it was high time for me to get back in the habit of writing about what I'm learning.
 
 I started blogging in 2011 and continued through sometime in 2015.  Over that time I created around a dozen different posts that were focused on projects I was working on, technology I was learning, and a few opinion pieces related to software development.
 
-I wrote all of my content in Wordpress because it was the cool thing to do in 2011.  Luckily, before shutting down my wordpress site I had the sense to export my content.  Exporting from wordpress left me with an XML file that looks disgusting.
+I wrote all of my content in Wordpress because it was the cool thing to do in 2011.  Luckily, before shutting down my wordpress site I had the sense to export my content.  Exporting from wordpress left me with an XML file that looks disgusting and was certain to be a nightmare to deal with.
 
-Fast forward a few years to today.  I'm moving my content over to Gatsby which is a static site generator that's built on React and GraphQL.  I think this is going to be a much better way to store my content, because everything that I create is just markdown files and images on disk.
+Fast forward a few years to today.  I'm moving my content over to Gatsby which is a static site generator that's built on React and GraphQL.  I think this is going to be a much better way to store my content, because everything that I create is just markdown files (text) and images on disk.
 
 ## Recovering Old Content
 
-The first challenge was finding a way to extract all of the text content from the wordpress XML file.  Luckily, there's a node module for that!
+The first challenge was finding a way to extract all of the text content from that ugly wordpress XML file.  Luckily, there's a node module for that!
 
 I used the npm package `wpxml2md` to convert the XML file into a set of markdown files.  This worked really well, and handled almost all of the text content correctly.  A few regex find and replaces to fix a few minor issues and I had most of the text.
 

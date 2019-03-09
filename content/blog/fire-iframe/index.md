@@ -1,6 +1,6 @@
 ---
 date: "2012-08-22T01:48:57Z"
-title: "FireIFrame - Extending Firebug to Simplify Working with Frames"
+title: "FireIFrame - Extending Firebug IFrame Support"
 ---
 
 ## The Trouble with IFrames and Firebug

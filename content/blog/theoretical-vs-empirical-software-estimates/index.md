@@ -1,6 +1,6 @@
 ---
 date: "2014-08-18T14:53:41Z"
-title: "Theoretical vs Empirical Estimation of Software Development Effort"
+title: "Theoretical vs Empirical Estimation of Development Effort"
 ---
 
 Lean thinking tells us that any expenditure of resources that does not create value for the customer is waste. If you could accurately tell your partners when your project would be complete, that would probably be incredibly valuable to them. So why, then, do some people consider it wasteful to have developers estimate?

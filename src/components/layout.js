@@ -5,10 +5,7 @@ import { rhythm } from "../utils/typography"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    const resumePath = `${__PATH_PREFIX__}/resume`
-    const largeTitle = location.pathname === rootPath || location.pathname === resumePath;
+    const { title, children } = this.props
 
     return (
       <div
@@ -20,7 +17,7 @@ class Layout extends React.Component {
         }}
       >
         <header>
-          <Title large={largeTitle} title={title} />
+          <Title title={title} />
         </header>
         <main>{children}</main>
         <footer>

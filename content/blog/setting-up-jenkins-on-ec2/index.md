@@ -124,7 +124,7 @@ Set your Security Realm to "Jenkins's own user database" and disable "Allow user
 
 Next we're going to grant rights to your user name (even though we haven't created the user yet - we'll do that next).  Enter your desired username in the "User/group to add:" textbox and click add.  Grant yourself all permissions in the matrix and you're all set.  There's a nice little shortcut button on the far right that you might need to side-scroll for.
 
-![Configuring Jenkins](Configure-System-Jenkins-1-300x160.jpg)
+![Configuring Jenkins](Configure-System-Jenkins-1.jpg)
 
 Click the Save button, it will prompt you to create a new user, and you should be all set to start creating jobs.
 

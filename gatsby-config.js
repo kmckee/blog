@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kyle McKee`,
     author: `Kyle McKee`,
-    description: `A blog about Software Development and hobby electronics.`,
+    description: `Kyle McKee is a software developer, teacher, speaker, technologist, inclusion advocate and more.`,
     siteUrl: `https://kyle-mckee.com/`,
     social: {
       twitter: `mckee_kyle`,

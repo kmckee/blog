@@ -94,7 +94,7 @@ const data = {
         { 
             title: 'Cleveland Medical Hackathon', 
             subtitle: '1st Place',
-            timePeriod: '2015',  
+            timePeriod: 'October 2015',  
             category: 'award',
             body: 'The IQ Sensor team set of to measure blood pressure through a compact wearable device that a patient could easily wear on the arm. This device’s flexible sensor mimics a traditional Sphygmomanometer (blood pressure cuff) reporting to an app the patient’s real time blood pressure. The idea was centered on mounting the sensor, along with the electronic components, on the bicep and without the need of an airbag to read the patient’s blood pressure. The five members of the team possessed a mix of industrial, medical and software experience. They included Mike Hoffman (Cleveland Clinic), Kyle Reissner (Rockwell Automation), Kyle McKee (LeanDog), Dr. Morteza Vatani (The University of Akron) and Ryan Jefferis (biomedical engineering grad student from Cornell University).',
             url: 'https://www.cleveland.com/business/2015/09/first_cleveland_medical_hackat_1.html' 

@@ -1,19 +1,13 @@
 import React from 'react';
 
 import Layout from '../components/layout';
-import Education from '../components/resume/education';
-import Volunteer from '../components/resume/volunteer';
-import Award from '../components/resume/award';
 import SkillDisplay from '../components/resume/skillDisplay';
-import ExperienceTimeline from '../components/resume/experienceTimeline';
+import EventsTimeline from '../components/resume/eventTimeline';
 import SEO from "../components/seo"
 
 import resume from '../resumeData';
 
 const ResumePage = ({location}) => {
-    const education = resume.education.map(ed => <Education key={ed.degree} {...ed}/>);
-    const volunteer = resume.volunteerWork.map(v => <Volunteer key={v.title + v.start} {...v}/>);
-    const award = resume.awards.map(a => <Award key={a.name + a.date} {...a}/>);
     return (
         <Layout location={location} title={resume.name}>
             <SEO
@@ -29,23 +23,8 @@ const ResumePage = ({location}) => {
                     <SkillDisplay />
                 </section>
                 <section>
-                    <h2>Experience</h2>
-                    <ExperienceTimeline experiences={resume.experience} />
-                </section>
-
-                <section>
-                    <h2>Education</h2>
-                    {education}
-                </section>
-
-                <section>
-                    <h2>Volunteer Work</h2>
-                    {volunteer}
-                </section>
-
-                <section>
-                    <h2>Awards</h2>
-                    {award}
+                    <h2>Timeline</h2>
+                    <EventsTimeline events={resume.events} />
                 </section>
             </main>
         </Layout>

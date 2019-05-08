@@ -42,6 +42,7 @@
     "vertical-timeline-component-for-react": "^1.0.6"
   },
   "devDependencies": {
+    "@playlyfe/gql": "^2.6.1",
     "prettier": "^1.16.4",
     "react-hot-loader": "^4.8.0"
   },

@@ -5,19 +5,6 @@ const data = {
     and startup environments.`,
     events: [
         {
-            title: 'Director of Education',
-            subtitle: 'We Can Code IT',
-            color: '#e7276f',
-            location: 'Cleveland, OH',
-            timePeriod: `2018 - Present`,
-            category: 'job',
-            body: `Ensuring our online and in-person bootcamp 
-            students receive the highest quality software development 
-            education that respects Agile principles and XP practices.  
-            Servant leader to the instructor teams for our Cleveland, 
-            Columbus, and online programs.`
-        },
-        {
             title: 'Independent Consultant',
             subtitle: 'AptoBits, LLC',
             color: 'rgba(19, 72, 126, 1)',
@@ -34,6 +21,19 @@ const data = {
             Agile, and modern management skills.`,
             footnote: `Clients included: LeanDog, Sherwin Williams, Rockwell Automation, 
             Medical Mutual of Ohio, Asurint.`
+        },
+         {
+            title: 'Director of Education',
+            subtitle: 'We Can Code IT',
+            color: '#e7276f',
+            location: 'Cleveland, OH',
+            timePeriod: `2018 - 2019`,
+            category: 'job',
+            body: `Ensuring our online and in-person bootcamp 
+            students receive the highest quality software development 
+            education that respects Agile principles and XP practices.  
+            Servant leader to the instructor teams for our Cleveland, 
+            Columbus, and online programs.`
         },
         {
             title: 'Sr. Software Dev. Instructor',
